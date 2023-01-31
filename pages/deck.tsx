@@ -8,7 +8,7 @@ import { setDeck } from './features/deck/deck-slice';
 
 const Deck: React.FC = () => {
     //Define Deck and Dispatch for Redux
-    const deck = useSelector((state: any) => state.deck.deck);
+    const deck = useSelector((state: Pokemon) => state.deck.deck);
     const dispatch = useDispatch();
     let totalExperience = 0;
 

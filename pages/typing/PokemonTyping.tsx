@@ -10,6 +10,7 @@ export interface Pokemon {
     sprites: {
         front_default: string;
     };
+    deck: any;
 }
 //Define Interface PokemonList
 export interface PokemonList {

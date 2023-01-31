@@ -14,7 +14,7 @@ const Search: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(false)
     const [error, setError] = useState<any>('')
     //Define Deck and Dispatch for Redux
-    let deck = useSelector((state: any) => state.deck.deck);
+    let deck = useSelector((state: Pokemon) => state.deck.deck);
     const dispatch = useDispatch();
 
 

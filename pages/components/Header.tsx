@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
+import { Pokemon } from '../typing/PokemonTyping';
 
 //Create Header component
 const Header: React.FC = () => {
   //Define Deck from redux for the numbers of pokemon in the deck
-  const deck = useSelector((state: any) => state.deck.deck);
+  const deck = useSelector((state: Pokemon) => state.deck.deck);
   return (
     <div className='h-[90px] bg-black  '>
       <div className='flex justify-between items-center h-full text-white mx-10'>
