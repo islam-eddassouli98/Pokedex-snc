@@ -7,7 +7,7 @@ First, run the development server: (You need docker)
 ```
 cd pokedex-snc
 ```
-And Launche the comand for start docker
+And Launch the comand for start docker
 ```
 docker-compose up --build --force-recreate   
 ```
