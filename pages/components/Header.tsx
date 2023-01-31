@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { Pokemon } from '../typing/PokemonTyping';
+import Image from 'next/image';
 
 //Create Header component
 const Header: React.FC = () => {
@@ -18,7 +19,7 @@ const Header: React.FC = () => {
         </div>
         <div className='flex justify-center items-center flex-[2]'>
           <Link  href="/">
-            <img src={'https://i.pinimg.com/originals/bd/cd/20/bdcd20f5411ee5785889542d303ad4cb.png'} className="w-[150px] m-auto" alt=""></img>
+            <Image src={'https://i.pinimg.com/originals/bd/cd/20/bdcd20f5411ee5785889542d303ad4cb.png'} width={100} height={100} className="w-[150px] m-auto" alt=""></Image>
           </Link>
         </div>
         <div className='flex justify-center items-center flex-1 '>

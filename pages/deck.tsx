@@ -3,6 +3,8 @@ import Header from './components/Header'
 import { Pokemon } from './typing/PokemonTyping'
 import { useSelector, useDispatch } from "react-redux";
 import { setDeck } from './features/deck/deck-slice';
+import Image from 'next/image';
+
 
 
 
@@ -25,18 +27,18 @@ const Deck: React.FC = () => {
                 totalExperience += pokemon.base_experience
                 return (
                     <div className='flex items-center justify-between flex-row uppercase' key={pokemon.id}>
-                        <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+                        {pokemon.sprites.front_default !== null && <Image src={pokemon.sprites.front_default} width={100} height={100} alt={pokemon.name} />}
                         <li>{pokemon.name}</li>
                         <li>{pokemon.base_experience}</li>
                         <li>{pokemon.types[0].type.name}</li>
                         <ul>
                             {pokemon.abilities.map(ability => (
-                                <li>{ability.ability.name}</li>
+                                <li key={ability.ability.name}>{ability.ability.name}</li>
                             ))}
                         </ul>
                         <ul>
                             {pokemon.types.map(type => (
-                                <li>{type.type.name}</li>
+                                <li key={type.type.name}>{type.type.name}</li>
                             ))}
                         </ul>
                         <button className='bg-red-500 p-2 rounded' onClick={() => removeToDeck(pokemon)}>Remove from team</button>
