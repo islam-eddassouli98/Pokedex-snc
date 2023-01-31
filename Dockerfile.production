@@ -17,10 +17,12 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 COPY next.config.js ./
-COPY tailwind.config.js ./
-COPY postcss.config.js ./
 COPY package.json yarn.lock ./
 COPY tsconfig.json ./
+COPY tailwind.config.js ./
+COPY postcss.config.js ./
+
+
 
 COPY --from=deps /app/node_modules ./node_modules
 #Copy files 
@@ -37,6 +39,7 @@ COPY store ./store
 COPY public ./public
 
 COPY styles ./styles
+
 
 RUN yarn build
 
