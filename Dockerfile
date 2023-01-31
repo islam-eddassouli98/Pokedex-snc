@@ -20,6 +20,14 @@ COPY postcss.config.js ./postcss.config.js
 # COPY components ./components
 COPY pages ./pages
 
+COPY components ./components
+
+COPY features ./features
+
+COPY typing ./typing
+
+COPY store ./store
+
 COPY public ./public
 
 COPY styles ./styles
