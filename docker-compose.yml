@@ -1,0 +1,16 @@
+# Update the version below to match your Docker version
+version: '3.1'
+# Update the service name below to match your project name
+services:
+  app:
+    image: docker-next-js-dev
+    build: .
+    ports:
+      - 3000:3000
+# Update the volumes below to match your project structure
+    volumes:
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles
+
+#Comand to run the docker-compose file "docker-compose up --build --force-recreate"

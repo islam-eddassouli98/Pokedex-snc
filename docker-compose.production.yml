@@ -1,0 +1,12 @@
+# Update the version below to match your Docker version
+version: '3.1'
+# Update the service name below to match your project name
+services:
+  app:
+    image: docker-next-js-dev
+    build: 
+      dockerfile: Dockerfile.production
+    ports:
+      - 3000:3000
+
+#Command to run the docker-compose production "docker-compose -f docker-compose.production.yml  up --build --force-recreate"
