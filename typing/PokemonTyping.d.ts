@@ -1,5 +1,5 @@
 //Define Interface Pokemon
-export interface Pokemon {
+export default  interface Pokemon {
     id: number;
     name: string;
     base_experience: number;
@@ -11,9 +11,4 @@ export interface Pokemon {
         front_default: string;
     };
     deck: any;
-}
-//Define Interface PokemonList
-export interface PokemonList {
-    name: string;
-    url: string;
 }

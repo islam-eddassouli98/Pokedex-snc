@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import Header from './components/Header';
-import { Pokemon } from './typing/PokemonTyping'
+import Header from '../components/Header';
+import  Pokemon  from '../typing/PokemonTyping'
 import Image from 'next/image';
 
 

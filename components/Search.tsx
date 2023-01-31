@@ -3,7 +3,8 @@ import React, { useState, useEffect,useContext } from 'react'
 import axios from 'axios'
 import { useSelector, useDispatch } from "react-redux";
 import { setDeck } from '../features/deck/deck-slice';
-import { Pokemon,PokemonList } from '../typing/PokemonTyping'
+import  Pokemon from '../typing/PokemonTyping';
+import PokemonList from '../typing/PokemonListTyping';
 import Image from 'next/image';
 
 const Search: React.FC = () => {

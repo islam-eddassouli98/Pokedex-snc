@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import Header from './components/Header'
-import { Pokemon } from './typing/PokemonTyping'
+import Header from '../components/Header'
+import  Pokemon from '../typing/PokemonTyping';
 import { useSelector, useDispatch } from "react-redux";
-import { setDeck } from './features/deck/deck-slice';
+import { setDeck } from '../features/deck/deck-slice';
 import Image from 'next/image';
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
-import { Pokemon } from '../typing/PokemonTyping';
+import  Pokemon  from '../typing/PokemonTyping';
 import Image from 'next/image';
 
 //Create Header component

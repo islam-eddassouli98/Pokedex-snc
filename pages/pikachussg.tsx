@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
-import Header from './components/Header';
-import { Pokemon} from './typing/PokemonTyping'
+import Header from '../components/Header';
+import  Pokemon from '../typing/PokemonTyping'
 import Image from 'next/image';
 
 const Pikachussg: React.FC = () => {
