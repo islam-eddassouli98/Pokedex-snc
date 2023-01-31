@@ -7,10 +7,12 @@ First, run the development server: (You need docker)
 ```
 cd pokedex-snc
 ```
-```And Launche the comand for start docker
+And Launche the comand for start docker
+```
 docker-compose up --build --force-recreate   
 ```
-```If you want launch docker in prod mode you can launch : 
+If you want launch docker in prod mode you can launch : 
+```
 docker-compose -f docker-compose.production.yml  up --build --force-recreate  
 ```
 
